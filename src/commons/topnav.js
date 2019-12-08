@@ -9,13 +9,13 @@ class Topnav extends Component {
         <div className="container-fluid">
           <div className="navbar-header">
             <a
-              href="javascript:void(0);"
+              href=""
               className="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#navbar-collapse"
               aria-expanded="false"
             />
-            <a href="javascript:void(0);" className="bars" />
+            <a href="" className="bars" />
             <a className="navbar-brand" href="index.html">
               ADMINBSB - MATERIAL DESIGN
       </a>
@@ -24,7 +24,7 @@ class Topnav extends Component {
             <ul className="nav navbar-nav navbar-right">
               {/* Call Search */}
               <li>
-                <a href="javascript:void(0);" className="js-search" data-close="true">
+                <a href="" className="js-search" data-close="true">
                   <i className="material-icons">search</i>
                 </a>
               </li>
@@ -32,7 +32,7 @@ class Topnav extends Component {
               {/* Notifications */}
               <li className="dropdown">
                 <a
-                  href="javascript:void(0);"
+                  href=""
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                   role="button"
@@ -45,7 +45,7 @@ class Topnav extends Component {
                   <li className="body">
                     <ul className="menu">
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <div className="icon-circle bg-light-green">
                             <i className="material-icons">person_add</i>
                           </div>
@@ -59,7 +59,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <div className="icon-circle bg-cyan">
                             <i className="material-icons">add_shopping_cart</i>
                           </div>
@@ -73,7 +73,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <div className="icon-circle bg-red">
                             <i className="material-icons">delete_forever</i>
                           </div>
@@ -89,7 +89,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <div className="icon-circle bg-orange">
                             <i className="material-icons">mode_edit</i>
                           </div>
@@ -105,7 +105,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <div className="icon-circle bg-blue-grey">
                             <i className="material-icons">comment</i>
                           </div>
@@ -121,7 +121,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <div className="icon-circle bg-light-green">
                             <i className="material-icons">cached</i>
                           </div>
@@ -137,7 +137,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <div className="icon-circle bg-purple">
                             <i className="material-icons">settings</i>
                           </div>
@@ -152,7 +152,7 @@ class Topnav extends Component {
                     </ul>
                   </li>
                   <li className="footer">
-                    <a href="javascript:void(0);">View All Notifications</a>
+                    <a href="">View All Notifications</a>
                   </li>
                 </ul>
               </li>
@@ -160,7 +160,7 @@ class Topnav extends Component {
               {/* Tasks */}
               <li className="dropdown">
                 <a
-                  href="javascript:void(0);"
+                  href=""
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                   role="button"
@@ -173,7 +173,7 @@ class Topnav extends Component {
                   <li className="body">
                     <ul className="menu tasks">
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <h4>
                             Footer display issue
                       <small>32%</small>
@@ -191,7 +191,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <h4>
                             Make new buttons
                       <small>45%</small>
@@ -209,7 +209,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <h4>
                             Create new dashboard
                       <small>54%</small>
@@ -227,7 +227,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <h4>
                             Solve transition issue
                       <small>65%</small>
@@ -245,7 +245,7 @@ class Topnav extends Component {
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">
+                        <a href="">
                           <h4>
                             Answer GitHub questions
                       <small>92%</small>
@@ -265,14 +265,14 @@ class Topnav extends Component {
                     </ul>
                   </li>
                   <li className="footer">
-                    <a href="javascript:void(0);">View All Tasks</a>
+                    <a href="">View All Tasks</a>
                   </li>
                 </ul>
               </li>
               {/* #END# Tasks */}
               <li className="pull-right">
                 <a
-                  href="javascript:void(0);"
+                  href=""
                   className="js-right-sidebar"
                   data-close="true"
                 >

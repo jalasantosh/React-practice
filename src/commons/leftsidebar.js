@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Routes from './routes';
 
 class Leftsidebar extends Component {
     render() {
@@ -17,9 +19,9 @@ class Leftsidebar extends Component {
                             aria-haspopup="true"
                             aria-expanded="false"
                         >
-                            John Doe
+                            Santosh Reddy Jala
       </div>
-                        <div className="email">john.doe@example.com</div>
+                        <div className="email">Jala.santoshreddy@gmail.com</div>
                         <div className="btn-group user-helper-dropdown">
                             <i
                                 className="material-icons"
@@ -31,29 +33,29 @@ class Leftsidebar extends Component {
         </i>
                             <ul className="dropdown-menu pull-right">
                                 <li>
-                                    <a href="javascript:void(0);">
+                                    <a href="">
                                         <i className="material-icons">person</i>Profile
             </a>
                                 </li>
                                 <li role="separator" className="divider" />
                                 <li>
-                                    <a href="javascript:void(0);">
+                                    <a href="">
                                         <i className="material-icons">group</i>Followers
             </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">
+                                    <a href="">
                                         <i className="material-icons">shopping_cart</i>Sales
             </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">
+                                    <a href="">
                                         <i className="material-icons">favorite</i>Likes
             </a>
                                 </li>
                                 <li role="separator" className="divider" />
                                 <li>
-                                    <a href="javascript:void(0);">
+                                    <a href="">
                                         <i className="material-icons">input</i>Sign Out
             </a>
                                 </li>
@@ -66,27 +68,44 @@ class Leftsidebar extends Component {
                 <div className="menu">
                     <ul className="list">
                         <li className="header">MAIN NAVIGATION</li>
-                        <li className="active">
-                            <a href="index.html">
-                                <i className="material-icons">home</i>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages/typography.html">
+
+                        {
+                            Routes.map(function (menu, index) {
+                                return (
+                                    <li key={index}>
+                                        <Link to={menu.path} >
+                                            <i className="material-icons">home</i>
+                                            <span>{menu.name}</span>
+                                        </Link>
+                                    </li>
+                                );
+                            })
+                        }
+
+                        {/* <li>
+                            <Link to="/aboutus">
                                 <i className="material-icons">text_fields</i>
                                 <span>Typography</span>
-                            </a>
+                            </Link>
+
                         </li>
+                        <li>
+                            <Link to="/adduser">
+                                <i className="material-icons">text_fields</i>
+                                <span>Add User</span>
+                            </Link>
+
+                        </li> */}
+
 
                         <li>
-                            <a href="javascript:void(0);" className="menu-toggle">
+                            <a href="" className="menu-toggle">
                                 <i className="material-icons">widgets</i>
                                 <span>Widgets</span>
                             </a>
                             <ul className="ml-menu">
                                 <li>
-                                    <a href="javascript:void(0);" className="menu-toggle">
+                                    <a href="" className="menu-toggle">
                                         <span>Cards</span>
                                     </a>
                                     <ul className="ml-menu">
@@ -102,7 +121,7 @@ class Leftsidebar extends Component {
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" className="menu-toggle">
+                                    <a href="" className="menu-toggle">
                                         <span>Infobox</span>
                                     </a>
                                     <ul className="ml-menu">
@@ -132,7 +151,7 @@ class Leftsidebar extends Component {
                 <div className="legal">
                     <div className="copyright">
                         © 2016 - 2017
-      <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+      <a href="">AdminBSB - Material Design</a>.
     </div>
                     <div className="version">
                         <b>Version: </b> 1.0.5

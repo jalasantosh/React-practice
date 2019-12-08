@@ -1,0 +1,57 @@
+Redux Basics: (Complex to understand but easy to use if we get it 
+-> cons: need to write lots of code {stores,actions,reducers} for simple task)
+
+Redux internally using hooks concept i think.
+
+Hooks Basics:
+--------------
+this.state = {
+    name  : "pavan"
+}
+
+this.setState({name:"santosh"})
+note: setState function is availabel only is class component
+
+so, react introduced hooks in functional component
+{name,setName} = useState("santosh");
+setName("Santosh");
+
+
+
+
+
+Class variable are not accessible outside class so we are trying to delcare them globally using store and accessing them using actions.
+
+
+1. Store - plain json object with variables
+2. Actions - plain json object with functions
+
+To add/update the data in the store we write functions in  actions.
+
+step-1 :  Wrap application with <Provider store={store}> Tag with store has a prop
+step-2 : Wrap component with Connect(store,actions)(ComponentName)
+
+5. create and declare actions in a seperate file and import them in a component
+
+
+addTodo(data,'addusername');
+addTodo(this.state,'delete');
+
+function actions(content,type,newValue){
+
+
+    
+}
+
+function addTodo (content,type){
+	switch(type){
+		case 'addusername':
+            content.username = "pavan"l
+	    break;
+        case 'delete':
+            delete content.username;
+        break;
+	}
+
+    return content;
+}
